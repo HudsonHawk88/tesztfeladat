@@ -1,0 +1,17 @@
+@use 'variables';
+
+.content-fluid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  background-color: variables.$default-background-color;
+
+  &__content {
+    padding: 20px;
+    width: 100%;
+  }
+}

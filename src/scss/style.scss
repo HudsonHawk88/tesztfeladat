@@ -1,0 +1,8 @@
+@forward 'variables';
+@forward 'header';
+@forward 'content';
+@forward 'footer';
+
+html body {
+  overflow-x: hidden;
+}

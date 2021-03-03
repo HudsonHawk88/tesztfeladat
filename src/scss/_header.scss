@@ -1,0 +1,127 @@
+.navbar {
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 90, 231, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 90, 231, 1) 100%
+  );
+  background: linear-gradient(
+    360deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 90, 231, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#005ae7",GradientType=1);
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 50rem) {
+    flex-direction: row;
+    max-height: 60px;
+  }
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 50rem) {
+      display: flex;
+      padding-top: 6px;
+      flex-direction: row;
+    }
+  }
+
+  &__nav._show {
+    display: flex;
+    padding-top: 61px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 2px;
+    height: 55px;
+    width: 95px;
+  }
+
+  &__navlist {
+    top: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    @media screen and (min-width: 50rem) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__navitem {
+    text-align: center;
+    left: 30px;
+    display: block;
+  }
+
+  &__navlink {
+    background-color: rgba($color: #222222, $alpha: 0);
+
+    color: #ffffff;
+    display: block;
+    line-height: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+
+    @media screen and (min-width: 50rem) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba($color: #6d97a1, $alpha: 0);
+      color: rgb(255, 243, 13);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    &--active {
+      background-color: rgba($color: #6d97a1, $alpha: 0);
+      color: rgb(255, 243, 13);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  &__span {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+
+    @media screen and (min-width: 50rem) {
+      display: none;
+    }
+  }
+
+  &__fa-icon {
+    color: #ffffff;
+  }
+}
